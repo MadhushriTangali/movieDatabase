@@ -1,0 +1,36 @@
+.poster-size {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  color: #fff;
+  font-family: 'Roboto';
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.view-details {
+  position: relative;
+  bottom: 0px;
+  align-self: stretch;
+  background-color: #8b1c15;
+  border: none;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.view-button {
+  background-color: green;
+  border: 0px;
+  border-radius: 8px;
+  padding: 12px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+}
