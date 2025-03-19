@@ -67,10 +67,6 @@ class Upcoming extends Component {
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
         </div>
-        <Pagination
-          totalPages={upcomingMovieResponse.totalPages}
-          apiCallback={this.getUpcomingMoviesResponse}
-        />
       </>
     )
   }

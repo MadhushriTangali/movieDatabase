@@ -61,10 +61,6 @@ const SearchResult = () => {
             <div className="route-page-body">
               {renderSearchResultViews(value)}
             </div>
-            <Pagination
-              totalPages={urlResponse.totalPages}
-              apiCallback={onSearch}
-            />
           </>
         )
       }}

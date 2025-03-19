@@ -67,10 +67,6 @@ class TopRated extends Component {
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
         </div>
-        <Pagination
-          totalPages={topRatedMovieResponse.totalPages}
-          apiCallback={this.getTopRatedMoviesResponse}
-        />
       </>
     )
   }

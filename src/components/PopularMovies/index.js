@@ -67,10 +67,6 @@ class PopularMovies extends Component {
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
         </div>
-        <Pagination
-          totalPages={popularMovieResponse.totalPages}
-          apiCallback={this.getPopularMoviesResponse}
-        />
       </>
     )
   }
