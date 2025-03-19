@@ -2,7 +2,6 @@ import Loader from 'react-loader-spinner'
 
 import MovieItem from '../MovieItem'
 import TopContainer from '../TopContainer'
-import Pagination from '../Pagination'
 
 import MovieContext from '../../context/MovieContext'
 
@@ -52,18 +51,14 @@ const SearchResult = () => {
 
   return (
     <MovieContext.Consumer>
-      {value => {
-        const {urlResponse, onSearch} = value
-
-        return (
-          <>
-            <TopContainer />
-            <div className="route-page-body">
-              {renderSearchResultViews(value)}
-            </div>
-          </>
-        )
-      }}
+      {value => (
+        <>
+          <TopContainer />
+          <div className="route-page-body">
+            {renderSearchResultViews(value)}
+          </div>
+        </>
+      )}
     </MovieContext.Consumer>
   )
 }

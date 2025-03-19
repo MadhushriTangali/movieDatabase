@@ -3,7 +3,6 @@ import Loader from 'react-loader-spinner'
 
 import MovieItem from '../MovieItem'
 import TopContainer from '../TopContainer'
-import Pagination from '../Pagination'
 
 import './index.css'
 
@@ -57,7 +56,7 @@ class PopularMovies extends Component {
   }
 
   render() {
-    const {isLoading, popularMovieResponse} = this.state
+    const {isLoading} = this.state
 
     return (
       <>

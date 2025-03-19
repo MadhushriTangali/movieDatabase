@@ -3,11 +3,10 @@ import Loader from 'react-loader-spinner'
 
 import MovieItem from '../MovieItem'
 import TopContainer from '../TopContainer'
-import Pagination from '../Pagination'
 
 import './index.css'
 
-class Upcoming extends Component {
+class UpcomingMovies extends Component {
   state = {
     isLoading: true,
     upcomingMovieResponse: {},
@@ -57,7 +56,7 @@ class Upcoming extends Component {
   }
 
   render() {
-    const {isLoading, upcomingMovieResponse} = this.state
+    const {isLoading} = this.state
 
     return (
       <>
@@ -72,4 +71,4 @@ class Upcoming extends Component {
   }
 }
 
-export default Upcoming
+export default UpcomingMovies
